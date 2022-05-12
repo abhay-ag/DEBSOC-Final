@@ -1,13 +1,15 @@
 import Main from './Main';
 import Navbar from './Navbar';
-import './style.css'
+import './style.css';
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <div>
+      <Navbar
+      title= "DEBSOC"
+      links = {["Home", "Community", "Curriculum"]} />
       <Main />
-    </>
+    </div>
   );
 }
 
