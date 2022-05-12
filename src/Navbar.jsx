@@ -3,7 +3,7 @@ import './style.css'
 
 function Navbar() {
   return (
-    <div className="w-screen h-10 fixed top-0 blur-sm"></div>
+    <div className="w-screen h-12 md:h-24 backdrop-blur-sm z-[9999] fixed top-0"></div>
   )
 }
 
