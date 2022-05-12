@@ -4,9 +4,12 @@
 
 @layer components{
     .back-main{
-        background: linear-gradient(-10deg, #000 75%, #8080ff 75%, #5a5ac1 100%)
+        background: linear-gradient(-13deg, #000 70%, #8080ff 70%, #5a5ac1 100%)
     }
     .back-sm{
-        background: linear-gradient(-10deg, #000 90%, #5a5ac1 10%, #8080ff 90%)
+        background: linear-gradient(-13deg, #000 90%, #8080ff 90%)
+    }
+    .back-md{
+        background: linear-gradient(-13deg, #000 80%, #8080ff 80%, #5a5ac1 100%)
     }
 }
