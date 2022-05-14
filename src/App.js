@@ -7,7 +7,8 @@ function App() {
     <div>
       <Navbar
       title= "DEBSOC"
-      links = {["Home", "Community", "Curriculum"]} />
+      links = {["Home", "Community", "Curriculum"]} 
+      linkTitle = {["/", "/community", "/curriculum"]}/>
       <Main />
     </div>
   );
