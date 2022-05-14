@@ -9,7 +9,7 @@ function Navbar({title, links}) {
     let str = loc.pathname;
     let currLoc = str.split("/")[1]
 
-    document.title = currLoc === '' ? 'Home' : currLoc
+    document.title = currLoc === '' ? 'DEBSOC' : currLoc.charAt(0).toUpperCase() + currLoc.slice(1) + ' | DEBSOC'
 
     const but = document.querySelectorAll(`a[href = '${str}']`)
     const acLink = document.querySelectorAll('a')
@@ -30,7 +30,7 @@ function Navbar({title, links}) {
           </Link>
       </div>
       <div className="flex flex-1 md:flex-[0.6_0_0%] font-medium text-white text-xl box-border">
-        {links?.map(link => <Link to={`${link === 'Home' ? '/' : link }`} key = {link} className={`hidden md:block box-border px-4 py-2 mx-2 rounded-xl hover:bg-black-rgba transition duration-150 ease-out`}>{link}</Link>)}
+        {links?.map(link => <Link to={`${link === 'Home' ? '/' : link.toLowerCase() }`} key = {link} className={`hidden md:block box-border px-4 py-2 mx-2 rounded-xl hover:bg-black-rgba transition duration-150 ease-out`}>{link}</Link>)}
       </div>
     </div>
   )
