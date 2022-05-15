@@ -4,7 +4,7 @@ import HeroLogo from './imgs/hero.svg'
 
 function Main() {
   return (
-    <div className="w-screen h-screen bg-bgb relative">
+    <div className="w-screen h-screen bg-bgb relative flex items-center justify-center">
       <img src={HeroLogo} alt = "Hero Gradient Banner" className='absolute w-full top-[-65px] z-[0]'/>
     </div>
   )
