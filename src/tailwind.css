@@ -10,7 +10,7 @@
     @keyframes plane-wing {
         40%{
             transform: translate(-3%, -7%) skew(-6deg);
-            filter: drop-shadow(0 150px 10px #000)
+            filter: drop-shadow(0 150px 15px #000)
         }
         80%{
             transform: translate(3%, 4%) skew(4deg);
