@@ -32,7 +32,7 @@ function Navbar({title, links}) {
       <div className="flex flex-1 md:flex-[0.45_0_0%] font-semibold text-white text box-border">
         {links?.map(link => <Link to={`${link === 'Home' ? '/' : link.toLowerCase() }`} key = {link} className={`hidden md:block box-border px-4 py-2 mx-2 rounded-lg hover:bg-black-rgba transition duration-150 ease-out`}>{link}</Link>)}
       </div>
-      <div className="flex flex-1 md:flex-[0.15_0_0%] items-center justify-end">
+      <div className="hidden md:flex flex-1 md:flex-[0.15_0_0%] items-center justify-end">
         <Link to= '/login' className='link'>
           <button className="rounded bg-white px-4 font-medium text-xl py-1 text-magenta">Sign In</button>
         </Link>
