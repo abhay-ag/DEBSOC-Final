@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Plane from './imgs/Plane'
 
 function Hero() {
   return (
@@ -12,7 +13,9 @@ function Hero() {
             </div>
             <font className="text-white text-[1.2rem] mt-5 font-medium">For more information click <font className = 'ml-3 text-magenta font-bold'><Link to= '/about-us' className = 'link'>here </Link></font></font>
         </div>
-        <div className="hidden lg:flex border-2 flex-1 md:flex-[0.4_0_0%]"></div>
+        <div className="hidden lg:flex flex-1 md:flex-[0.4_0_0%]">
+            <Plane className = 'plane'/>
+        </div>
     </div>
   )
 }
