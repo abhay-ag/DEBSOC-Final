@@ -17,6 +17,9 @@
             filter: drop-shadow(0 75px 10px #000)
         }
     }
+    .rad-grad{
+        background: radial-gradient(circle at bottom right, rgba(108,108,212, 0.1) 0%, rgb(24,24,27) 25%)
+    }
 }
 
 @layer base{

@@ -1,5 +1,6 @@
 import Main from './Main';
 import Navbar from './Navbar';
+import Section1 from './Section1';
 import './style.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       links = {["Home", "Community", "Curriculum"]} 
       />
       <Main />
+      <Section1 />
     </div>
   );
 }

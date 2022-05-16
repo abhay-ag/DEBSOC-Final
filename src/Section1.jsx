@@ -3,7 +3,9 @@ import './style.css'
 
 function Section1() {
   return (
-    <div>Section1</div>
+    <div className="w-screen h-screen flex flex-col justify-center items-center rad-grad">
+      
+    </div>
   )
 }
 
