@@ -23,6 +23,9 @@
     .mycol{
         background: linear-gradient(114.7deg, #27272A -9.77%, #18181B 110.32%);
     }
+    .cuFon{
+        transform: scale(1.5);
+    }
 }
 
 @layer base{
