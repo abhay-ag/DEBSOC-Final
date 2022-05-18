@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.target-link {
+    @apply md:bg-black-rgba bg-zinc-700;
+}

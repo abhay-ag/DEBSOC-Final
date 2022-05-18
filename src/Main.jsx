@@ -11,9 +11,9 @@ function Main() {
         <div className='z-[2] flex-1'>
           {
             LOGO.map((word, i) => (
-              <div className='flex justify-center md:justify-start my-3 z[2]'>
+              <div key={`word-${word}`} className='flex justify-center md:justify-start my-3 z[2]'>
                 {word.split("").map((letter, j) => (
-                  <div className='text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-wide font-semibold z-[2]'>{letter}</div>
+                  <div key={`letter-${letter}`} className='text-6xl md:text-7xl lg:text-8xl xl:text-9xl tracking-wide font-semibold z-[2]'>{letter}</div>
                 ))}
               </div>
             ))
