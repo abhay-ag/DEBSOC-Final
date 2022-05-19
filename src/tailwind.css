@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .target-link {
-    @apply md:bg-black-rgba bg-zinc-700;
+    @apply md:bg-black-rgba bg-zinc-700/70;
+}
+
+.main-front-logo:last-child {
+    @apply underline underline-offset-4 decoration-indigo-400;
 }

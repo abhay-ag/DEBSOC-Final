@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import './style.css'
 
@@ -47,7 +45,7 @@ function Navbar({title, links}) {
       </div>
       {toggleNavMenu && <div className="p-4 md:hidden">
         <div className='flex flex-col space-y-2'>
-        {links?.map(link => <Link key={`link-${link.name}`} to={`/${link.to}`} className='flex items-center text-gray-300 hover:bg-zinc-700 hover:bg-opacity-90 hover:text-white px-3 py-2 rounded-md text-lg font-semibold bg-opacity-60 text-white' onClick={resetNavMenuState}>{link.name}</Link>)}
+        {links?.map(link => <Link key={`link-${link.name}`} to={`/${link.to}`} className='flex items-center text-gray-300 hover:bg-zinc-700/90 hover:text-white px-4 py-2 rounded-md text-lg font-semibold bg-opacity-60 text-white' onClick={resetNavMenuState}>{link.name}</Link>)}
         </div>
         <div className='flex py-4 mt-6 mx-4 border-t border-zinc-700'>
           <Link className="flex-1 text-center py-3 px-5 font-medium text-lg text-white rounded-md bg-transparent border login-link" to="/login" onClick={resetNavMenuState}>Sign in</Link>
