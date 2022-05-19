@@ -18,10 +18,7 @@
         }
     }
     .rad-grad{
-        background: radial-gradient(circle at bottom right, rgba(108,108,212, 0.1) 0%, rgb(24,24,27) 25%)
-    }
-    .rad-grad-1{
-        background: radial-gradient(circle at top right, rgba(108,108,212, 0.1) 0%, rgb(24,24,27) 25%)
+        background: radial-gradient(circle at center right, rgba(108,108,212, 0.1) 0%, rgb(24,24,27) 25%)
     }
     .mycol{
         background: linear-gradient(114.7deg, #27272A -9.77%, #18181B 110.32%);
