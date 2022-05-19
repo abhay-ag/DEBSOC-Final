@@ -12,7 +12,7 @@ function Hero() {
                 <font className="text-white font-black text-xl md:text-[1.7rem] mr-5">We're Hiring</font>
                 <Link className='link' to= '/apply'><button className='bg-magenta px-4 py-2 rounded text-xl font-semibold text-white'>Apply Now</button></Link>
             </div>
-            <font className="text-white text-[1.2rem] mt-5 font-medium">For more information click <font className = 'ml-3 text-magenta font-bold'><Link to= '/about-us' className = 'link'>here<ArrowRightAltIcon fontSize='large'/> </Link></font></font>
+            <font className="text-white text-[1.2rem] mt-5 font-medium">For more information click <font className = 'ml-3 text-magenta hover:text-white transition ease-out font-bold'><Link to= '/about-us' className = 'link'>here<ArrowRightAltIcon fontSize='large'/> </Link></font></font>
         </div>
         <div className="hidden lg:flex flex-1 md:flex-[0.4_0_0%] justify-center">
             <Plane className = 'plane'/>
