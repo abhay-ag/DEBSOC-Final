@@ -64,7 +64,7 @@ function Section1() {
           text = "Mentorship from Industry experts of top debating societies"
         />
       </div>
-      <Link className='link' to= '/apply'><button className='bg-magenta px-4 py-2 rounded text-xl mt-8 mb-16 md:mb-5 font-semibold text-white'>Apply Now</button></Link>
+      <Link className='link' to= '/apply'><button className='bg-magenta px-4 py-2 rounded text-xl mt-8 mb-16 md:mb-36 font-semibold text-white'>Apply Now</button></Link>
       <div className='w-full h-fit flex flex-col justify-center items-center'>
         <h1 className='text-[8vw] md:text-7xl font-bold text-white text-center'>
             What makes us<font className = 'text-magenta'> Unique!</font>
