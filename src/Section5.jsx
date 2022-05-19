@@ -41,11 +41,11 @@ function Section5() {
       }
   ]
   return (
-    <div className='w-full h-fit md:h-[90vh] rad-grad-1 flex flex-col justify-center items-center'>
-        <h1 className='text-[8vw] md:text-7xl font-bold text-white'>
+    <div className='w-full h-fit lg:h-[60rem] rad-grad-1 flex flex-col justify-center items-center'>
+        <h1 className='text-[8vw] md:text-7xl font-bold text-white text-center'>
             What makes us<font className = 'text-magenta'> Unique!</font>
         </h1>
-        <div className='w-3/4 my-8 h-fit flex flex-col md:flex-row flex-wrap justify-between'>
+        <div className='w-[90%] h-fit flex flex-col lg:flex-row flex-wrap items-center justify-center'>
             {
                 data.map(ob => (
                     <Maincard
