@@ -2,6 +2,7 @@ import Main from './Main';
 import Maincard from './Maincard';
 import Navbar from './Navbar';
 import Section1 from './Section1';
+import Section5 from './Section5';
 import './style.css';
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       />
       <Main />
       <Section1 />
-      <Maincard />
+      <Section5 />
     </div>
   );
 }

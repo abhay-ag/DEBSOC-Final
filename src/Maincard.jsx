@@ -4,7 +4,7 @@ import CompSVG from './imgs/Computer'
 
 function Maincard({icon, heading, desc}) {
   return (
-    <div className='w-[27rem] h-[18rem] rounded flex flex-col justify-center items-center bg-gradient-to-br from-indigo-400 via-gray-700 to-gray-600 p-0.5'>
+    <div className='w-[25rem] h-[16rem] rounded flex flex-col justify-center items-center bg-gradient-to-br from-indigo-400 via-gray-700 mt-8 to-gray-600 p-0.5'>
         <div className='w-full h-full mycol relative flex flex-col justify-center box-border p-5'>
             <img src={Border} alt="corner border" className='absolute right-[-0.3rem] opacity-30 top-[-0.3rem] z-0'/>
             <div className='rounded-xl bg-[rgba(255,255,255,0.08)] w-16 h-16 flex items-center justify-center'>
