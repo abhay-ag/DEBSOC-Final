@@ -1,3 +1,4 @@
+import Footer from './Footer';
 import Main from './Main';
 import Maincard from './Maincard';
 import Navbar from './Navbar';
@@ -13,6 +14,7 @@ function App() {
       />
       <Main />
       <Section1 />
+      <Footer />
     </div>
   );
 }
