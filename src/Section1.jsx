@@ -13,6 +13,7 @@ import Speaker from './imgs/Speaker'
 import Group from './imgs/Group'
 import Geometry from './imgs/Geometry'
 import img from './imgs/logos.png'
+import Achievement from './Achievement';
 
 function Section1() {
   const data = [
@@ -47,6 +48,21 @@ function Section1() {
       desc: `We end your stage fear of interviews, by having mock "live like" interviews by mentors from FAANG type companies.`
     }
 ]
+  const dataAchieve = [
+    {
+      name: "Harsh Vardhan Sikka",
+      ac: ["Finalist: INBLOOM Christ University", "It's all Debatable by ASME", "Word Wars by Mechstein"]
+    },{
+      name: "Ayush Saini",
+      ac: ["Finalist: NSMCD'22 at NSUT Delhi"]
+    },{
+      name: "Rohan Kapoor",
+      ac: ["MUN Special Mention"]
+    },{
+      name: "Aseem Chadha",
+      ac: ["UIET MUN'21", "Bebaak 2nd position", "IMS Noida"]
+    }
+  ]
   return (
     <div className="w-screen h-fit flex flex-col justify-center items-center rad-grad mb-5">
       <h1 className='text-[10vw] md:text-7xl text-white font-bold underline underline-offset-8 decoration-magenta'>Join DEBSOC</h1>
@@ -66,7 +82,7 @@ function Section1() {
         />
       </div>
       <Link className='link' to= '/apply'><button className='bg-magenta px-4 py-2 rounded text-xl mt-8 mb-16 font-semibold text-white'>Apply Now</button></Link>
-      <div className='w-full h-fit md:h-[80vh] flex flex-col justify-center items-center box-border'>
+      <div className='w-full h-fit flex flex-col justify-center items-center box-border'>
         <h1 className='font-bold text-[8vw] md:text-7xl text-white'>
           Under our <font className = 'text-magenta'>Guidance</font>
         </h1>
@@ -76,7 +92,13 @@ function Section1() {
       <div className='w-screen h-fit box-border flex flex-col items-center justify-center'>
         <h1 className='text-[8vw] md:text-6xl font-bold text-white'>On a mission</h1>
         <h1 className='text-[8vw] md:text-6xl font-bold text-magenta'>to empower students</h1>
-        
+        <div className='flex flex-col md:flex-row flex-wrap w-3/4 h-fit lg:h-[60vh] justify-around items-center h-fit box-border my-24'>
+          {
+            dataAchieve.map(ob => (
+              <Achievement name={ob.name} data = {ob.ac}/>
+            ))
+          }
+        </div>
       </div>
       <div className='w-full h-fit flex flex-col justify-center items-center'>
         <h1 className='text-[8vw] md:text-7xl font-bold text-white text-center'>
