@@ -12,6 +12,7 @@ import Idea from './imgs/Idea'
 import Speaker from './imgs/Speaker'
 import Group from './imgs/Group'
 import Geometry from './imgs/Geometry'
+import img from './imgs/logos.png'
 
 function Section1() {
   const data = [
@@ -64,12 +65,13 @@ function Section1() {
           text = "Mentorship from Industry experts of top debating societies"
         />
       </div>
-      <Link className='link' to= '/apply'><button className='bg-magenta px-4 py-2 rounded text-xl mt-8 mb-16 md:mb-36 font-semibold text-white'>Apply Now</button></Link>
-      <div className='w-full h-fit flex flex-col justify-center items-center box-border'>
-        <h1 className='font-bold text-7xl text-white'>
+      <Link className='link' to= '/apply'><button className='bg-magenta px-4 py-2 rounded text-xl mt-8 mb-16 font-semibold text-white'>Apply Now</button></Link>
+      <div className='w-full h-fit md:h-[80vh] flex flex-col justify-center items-center box-border'>
+        <h1 className='font-bold text-[8vw] md:text-7xl text-white'>
           Under our <font className = 'text-magenta'>Guidance</font>
         </h1>
-        <h3 className='font-medium text-white text-3xl mt-4'>our students work in</h3>
+        <h3 className='font-medium text-white text-[4vw] md:text-3xl md:mt-4'>our students have debated in</h3>
+        <img src={img} alt="logos" className='w-full md:w-3/4 lg:w-1/2'/>
       </div>
       <div className='w-full h-fit flex flex-col justify-center items-center'>
         <h1 className='text-[8vw] md:text-7xl font-bold text-white text-center'>
