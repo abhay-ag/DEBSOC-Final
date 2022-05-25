@@ -92,7 +92,7 @@ function Section1() {
       <div className='w-screen h-fit box-border flex flex-col items-center justify-center'>
         <h1 className='text-[8vw] md:text-6xl font-bold text-white'>On a mission</h1>
         <h1 className='text-[8vw] md:text-6xl font-bold text-magenta'>to empower students</h1>
-        <div className='flex flex-col md:flex-row flex-wrap w-3/4 h-fit lg:h-[60vh] justify-around items-center h-fit box-border my-24'>
+        <div className='flex flex-col md:flex-row flex-wrap w-3/4 h-fit lg:h-[60vh] justify-around h-fit box-border my-24'>
           {
             dataAchieve.map(ob => (
               <Achievement name={ob.name} data = {ob.ac}/>
