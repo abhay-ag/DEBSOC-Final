@@ -73,6 +73,11 @@ function Section1() {
         <h3 className='font-medium text-white text-[4vw] md:text-3xl md:mt-4'>our students have debated in</h3>
         <img src={img} alt="logos" className='w-full md:w-3/4 lg:w-1/2'/>
       </div>
+      <div className='w-screen h-fit box-border flex flex-col items-center justify-center'>
+        <h1 className='text-[8vw] md:text-6xl font-bold text-white'>On a mission</h1>
+        <h1 className='text-[8vw] md:text-6xl font-bold text-magenta'>to empower students</h1>
+        
+      </div>
       <div className='w-full h-fit flex flex-col justify-center items-center'>
         <h1 className='text-[8vw] md:text-7xl font-bold text-white text-center'>
             What makes us<font className = 'text-magenta'> Unique!</font>
