@@ -25,6 +25,9 @@ function App() {
         }/>
         <Route path="/curriculum" element = {<Curriculum />}/>
         <Route path="/community" element = {<Community />} />
+        <Route path="/about-us" element = {<div className="font-bold text-white flex w-screen h-screen text-6xl items-center justify-center">UNDER CONSTRUCTION</div>} />
+        <Route path="/apply" element = {<div className="font-bold text-white flex w-screen h-screen text-6xl items-center justify-center">UNDER CONSTRUCTION</div>} />
+        <Route path="/login" element = {<div className="font-bold text-white flex w-screen h-screen text-6xl items-center justify-center">UNDER CONSTRUCTION</div>} />
       </Routes>
       <Footer />
     </Router>

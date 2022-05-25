@@ -95,7 +95,7 @@ function Section1() {
         <div className='flex flex-col md:flex-row flex-wrap w-3/4 h-fit lg:h-[60vh] justify-around h-fit box-border my-24'>
           {
             dataAchieve.map(ob => (
-              <Achievement name={ob.name} data = {ob.ac}/>
+              <Achievement key={ob.name} name={ob.name} data = {ob.ac}/>
             ))
           }
         </div>
@@ -111,6 +111,7 @@ function Section1() {
                         icon={ob.icon}
                         heading={ob.title}
                         desc = {ob.desc}
+                        key = {ob.title}
                     />
                 ))
             }
