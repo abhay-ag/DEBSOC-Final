@@ -35,9 +35,9 @@ function Main() {
           <div className="my-8 text-lg">For more information about the course, start scrolling through &#8595;</div>
         </div>
           {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
-        <div className='hidden md:ml-10 md:block'>
-          <img className=" h-40 w-40" src={Logo} alt="Debsoc Logo" />
-        </div>
+        {/*<div className='hidden md:ml-10 md:block'>*/}
+        {/*  <img className=" h-40 w-40" src={Logo} alt="Debsoc Logo" />*/}
+        {/*</div>*/}
       </div>
 
       {/* Section 2 - Seduction */}
