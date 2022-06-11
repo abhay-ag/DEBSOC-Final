@@ -2,10 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar-track {
+    @apply bg-zinc-800;
+}
+
+body::-webkit-scrollbar-thumb {
+    @apply bg-indigo-400;
+}
+
 .target-link {
     @apply md:bg-black-rgba bg-zinc-700/70;
 }
 
 .main-front-logo:last-child {
     @apply underline underline-offset-4 decoration-indigo-400;
+}
+
+.main-section-1-special {
+    @apply lg:w-1/3 lg:px-5 py-5 overflow-hidden min-h-full w-full;
+}
+
+.main-section-1-special-element {
+    @apply bg-gradient-to-br from-indigo-400 via-gray-700 to-gray-600 p-0.5 rounded h-full;
+}
+
+.main-section-1-special-sub-element {
+    @apply shadow-sm rounded flex flex-col items-center py-7 px-4 h-full;
+    background: linear-gradient(114.7deg, #27272A -9.77%, #18181B 110.32%);
+}
+
+.active-auth-button-toggle {
+    @apply bg-gray-950 text-zinc-400;
+}
+
+/*input:-webkit-autofill,*/
+/*input:-webkit-autofill:hover,*/
+/*input:-webkit-autofill:focus,*/
+/*textarea:-webkit-autofill,*/
+/*textarea:-webkit-autofill:hover,*/
+/*textarea:-webkit-autofill:focus,*/
+/*select:-webkit-autofill,*/
+/*select:-webkit-autofill:hover,*/
+/*select:-webkit-autofill:focus {*/
+/*    -webkit-box-shadow: 0 0 0 1000px #2a3350 inset !important;*/
+/*    -webkit-text-fill-color: white !important;*/
+/*    @apply bg-transparent;*/
+/*}*/
+
+.auth-page-background {
+    @apply bg-top bg-no-repeat bg-[url('https://devsnest.in/_next/static/media/login-bg.e98b8ea6.svg')];
+}
+
+.main-page-background {
+    @apply bg-top bg-contain bg-no-repeat bg-[url('https://devsnest.in/_next/static/media/gradient-banner.b90a7578.svg')]
 }

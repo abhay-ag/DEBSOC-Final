@@ -13,3 +13,7 @@ code {
 .patented-logo {
   font-family: 'Roboto', sans-serif;
 }
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}

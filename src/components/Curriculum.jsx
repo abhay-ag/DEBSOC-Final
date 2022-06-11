@@ -17,7 +17,8 @@ export default function Curriculum() {
                         <div className="w-24 h-24 flex justify-center">
                             <FontAwesomeIcon className="text-4xl text-gray-300 animate-spin" icon={faClock} />
                         </div>
-                        <div className="text-3xl mb-4">Mock Debates</div>
+                        <div className="text-3xl mb-4
+                        ">Mock Debates</div>
                         <div className="text-indigo-300">Dive into the world of debating, MUNs and whatnot</div>
                     </div>
                     <div className="bg-indigo-400 max-w-3xl py-12 sm:py-0">
