@@ -1,12 +1,15 @@
-import React, {useEffect, useMemo, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import studentsKilaFate from '../media/images/studentsKilaFate.png'
-import Logo from '../media/images/debsoc_logo.png'
-import {Achievements, Curriculum, Founders, Uniqueness} from "../resources/main";
+// import Logo from '../media/images/debsoc_logo.png'
+import {Achievements, Curriculum, Founders, Motions, Uniqueness} from "../resources/main";
 import {Link} from "react-router-dom";
 
 function Main() {
-  const Genres = ["Netflix", "pop culture", "music", "drama", "tech", "entrepreneurship", "science", "business", "law", "health", "sports"];
+  const Genres = ["netflix", "pop culture", "music", "drama", "tech", "entrepreneurship", "science", "business", "law", "health", "sports"];
   const [genre, setGenre] = useState(0);
+  const [motionIndex, setMotionIndex] = useState(0);
+
+  const getRandomMotion = () => setMotionIndex(Math.floor(Math.random() * Motions.length));
   
   useEffect(() => {
     const genreShuffle = setTimeout(() => {
@@ -14,7 +17,7 @@ function Main() {
         setGenre(genre + 1);
       else
         setGenre(0);
-    }, 1000);
+    }, 500);
 
     return (() => {
       clearTimeout(genreShuffle);
@@ -31,7 +34,7 @@ function Main() {
         <div className='flex-1'>
           <div className="text-3xl md:text-4xl lg:text-5xl font-bold">The 12 Month bootcamp to set your mind free!</div>
           <div className="text-xl my-8 leading-relaxed">Join the ongoing batch to explore your interests, express your opinions & become the personality you always wished to be. <span className="-translate-y-1 text-rose-300 text-base rounded-full bg-red-700 px-2 py-0.5 font-semibold inline-flex items-center w-36"><span className="w-1.5 h-1.5 rounded-full bg-rose-300 mr-2 ml-1"></span>Limited Seats</span></div>
-          <Link to="/authentication" className="cursor-pointer px-8 py-3 bg-indigo-400 hover:bg-indigo-500 box-border rounded text-xl">Become a member</Link>
+          <Link to="/authentication" className="cursor-pointer px-8 py-3 bg-violet-500 hover:bg-violet-600 box-border rounded text-xl">Become a member</Link>
           <div className="my-8 text-lg">For more information about the course, start scrolling through &#8595;</div>
         </div>
           {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
@@ -43,47 +46,47 @@ function Main() {
       {/* Section 2 - Seduction */}
 
       <div className="my-10 px-10 sm:px-16 flex flex-col gap-16 justify-center items-center max-w-7xl mx-auto">
-        <h2 className="text-5xl md:text-6xl md:w-5/6 font-bold text-center"><span className="text-indigo-400">Join</span> our 12 month debating bootcamp & transform your <span className="text-indigo-400">thoughts into words</span></h2>
+        <h2 className="text-5xl md:text-6xl md:w-5/6 font-bold text-center"><span className="text-violet-500">Join</span> our 12 month debating bootcamp & transform your <span className="text-violet-500">thoughts into words</span></h2>
         <div className="text-xl md:text-2xl text-center font-medium">Kickstart your debating journey with peer learning and hands on practice driven 12 months debating bootcamp to become a public speaker, an amazing researcher, speak with fluency and participate in top debating competitions all over India.</div>
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/3 lg:px-5 py-5 overflow-hidden min-h-full w-full">
-            <div className="bg-gradient-to-br from-indigo-400 via-gray-700 to-gray-600 p-0.5 rounded h-full">
+            <div className="bg-gradient-to-br from-violet-400 via-gray-700 to-gray-600 p-0.5 rounded h-full">
               <div className="shadow-sm rounded flex flex-col items-center py-7 px-4 h-full" style={{ background:'linear-gradient(114.7deg, #27272A -9.77%, #18181B 110.32%)' }}>
                 <div>
-                  <i className="fad fa-comments-alt text-indigo-400 text-4xl"></i>
+                  <i className="fad fa-comments-alt text-violet-500 text-4xl"></i>
                 </div>
                 <p className="text-center mt-10 text-lg md:text-xl font-medium text-gray-100">Weekly Live meetings & Group discussions with 25+ hands on practice sessions</p>
               </div>
             </div>
           </div>
           <div className="lg:w-1/3 lg:px-5 py-5 overflow-hidden min-h-full w-full">
-            <div className="bg-gradient-to-br from-indigo-400 via-gray-700 to-gray-600 p-0.5 rounded h-full">
+            <div className="bg-gradient-to-br from-violet-400 via-gray-700 to-gray-600 p-0.5 rounded h-full">
               <div className="shadow-sm rounded flex flex-col items-center py-7 px-4 h-full" style={{ background:'linear-gradient(114.7deg, #27272A -9.77%, #18181B 110.32%)' }}>
                 <div>
-                  <i className="fad fa-podium text-indigo-400 text-4xl"></i>
+                  <i className="fad fa-podium text-violet-500 text-4xl"></i>
                 </div>
-                <p className="text-center mt-12 text-lg md:text-xl font-medium text-gray-100">Discussions & debates on curated themes that matter, ranging from <span className="underline underline-offset-4 text-indigo-400 italic">{Genres[genre]}</span></p>
+                <p className="text-center mt-12 text-lg md:text-xl font-medium text-gray-100">Discussions & debates on curated themes that matter, ranging from <span className="text-violet-500 uppercase font-semibold">{Genres[genre]}</span></p>
               </div>
             </div>
           </div>
           <div className="lg:w-1/3 lg:px-5 py-5 overflow-hidden min-h-full w-full">
-            <div className="bg-gradient-to-br from-indigo-400 via-gray-700 to-gray-600 p-0.5 rounded h-full">
+            <div className="bg-gradient-to-br from-violet-400 via-gray-700 to-gray-600 p-0.5 rounded h-full">
               <div className="shadow-sm rounded flex flex-col items-center py-7 px-4 h-full" style={{ background:'linear-gradient(114.7deg, #27272A -9.77%, #18181B 110.32%)' }}>
                 <div>
-                  <i className="fad fa-user-friends text-indigo-400 text-4xl"></i>
+                  <i className="fad fa-user-friends text-violet-500 text-4xl"></i>
                 </div>
                 <p className="text-center mt-6 text-lg md:text-xl font-medium text-gray-100">Most active learning & growth environment. Get trained by seniors, learn with peers & be a part of the most supportive community at Chitkara University.</p>
               </div>
             </div>
           </div>
         </div>
-        <Link to="/authentication" className="cursor-pointer px-8 py-3 bg-indigo-400 hover:bg-indigo-500 box-border rounded text-xl">Apply now</Link>
+        <Link to="/authentication" className="cursor-pointer px-8 py-3 bg-violet-500 hover:bg-violet-600 box-border rounded text-xl">Apply now</Link>
       </div>
 
-      {/* Section 3 */}
+      {/* Section 3 - Kila Fate */}
 
-      <div className="w-full my-10 py-20 md:py-10 px-8 flex flex-col items-center justify-center max-w-5xl md:mx-auto">
-        <h2 className="text-5xl md:text-6xl md:w-5/6 font-bold text-center mb-6">From just our <span className="text-indigo-400">First Batch</span></h2>
+      <div className="w-full my-10 pt-20 md:pt-10 px-8 flex flex-col items-center justify-center max-w-5xl md:mx-auto">
+        <h2 className="text-5xl md:text-6xl md:w-5/6 font-bold text-center mb-6">From just our <span className="text-violet-500">First Batch</span></h2>
         <h3 className="text-2xl md:text-3xl font-medium text-center text-gray-200 mb-8">our students participated in</h3>
         <img className="mt-4 mb-10 md:mb-16" src={studentsKilaFate}  alt="studentsKilaFate"/>
       </div>
@@ -93,16 +96,16 @@ function Main() {
       <div className="min-h-screen flex items-center justify-center px-8 relative">
         <div className="absolute -z-0" style={{ top:'10%',left:'-300px',height:'600px',width:'600px',background:'radial-gradient(50% 50% at 50% 50%, #8080FF 0%, rgba(128, 128, 255, 0) 100%)',opacity:'0.1'}}></div>
         <div className="max-w-6xl flex flex-col items-center">
-          <h2 className="text-5xl md:text-6xl md:w-5/6 font-bold text-center mb-6">On a mission to <span className="text-indigo-400">empower students</span></h2>
+          <h2 className="text-5xl md:text-6xl md:w-5/6 font-bold text-center mb-6">On a mission to <span className="text-violet-500">empower students</span></h2>
           <h3 className="text-2xl mt-8 mb-12 py-2 text-center font-medium">Not like your average club, speaking volumes with actions. Check out the success of our students.</h3>
           <div className="flex flex-wrap justify-evenly">
             {Achievements.map((person, i) => (
-              <div key={`achievements-element-${i}`} className="block group bg-gray-900 shadow-sm shadow-indigo-400 rounded-lg cursor-default overflow-hidden space-y-4 m-5 justify-around pb-4 w-60 z-10">
+              <div key={`achievements-element-${i}`} className="block group bg-gray-900 shadow-sm shadow-violet-500 rounded-lg cursor-default overflow-hidden space-y-4 m-5 justify-around pb-4 w-60 z-10">
                 <img loading="lazy" src={person.image_link} alt="student" className="h-60 w-60 w-full object-center object-cover" />
                 <h2 className="text-lg text-gray-300 font-semibold text-center">{person.name}</h2>
                 <p className="text-gray-400 text-base text-center px-4">
                   {person.achievement.map((value, j) => (
-                    <div>{value}</div>
+                    <span className="block">{value}</span>
                   ))}
                 </p>
               </div>
@@ -113,10 +116,10 @@ function Main() {
         </div>
       </div>
 
-      {/* Section 5 */}
+      {/* Section 5 - Curriculum */}
 
-      <div className="my-10 py-16 flex flex-col max-w-5xl mx-auto">
-        <h2 className="text-5xl md:text-6xl md:w-5/6 font-bold text-center mb-6 mx-auto">Our <span className="text-indigo-400">Curriculum</span></h2>
+      <div className="mb-10 pt-16 flex flex-col max-w-5xl mx-auto">
+        <h2 className="text-5xl md:text-6xl md:w-5/6 font-bold text-center mb-6 mx-auto">Our <span className="text-violet-500">Curriculum</span></h2>
         <div className="flex items-stretch justify-center flex-wrap w-full max-w-screen-lg mt-8">
           {Curriculum.map((element, i) => (
             <div className="w-full md:w-1/2 py-4 px-5" key={`curriculum-element-${i}`}>
@@ -128,17 +131,17 @@ function Main() {
             </div>
           ))}
         </div>
-        <Link className="text-indigo-400 hover:text-indigo-300 transition-colors font-medium text-2xl mx-2 mt-12 text-center" to="/curriculum">Check our detailed curriculum &#8594;</Link>
+        <Link className="text-violet-500 hover:text-violet-600 transition-colors font-medium text-2xl mx-2 mt-12 text-center" to="/curriculum">Check our detailed curriculum &#8594;</Link>
       </div>
 
-      {/* Section 6 */}
+      {/* Section 6 - Uniqueness */}
 
-      <div className="my-10 py-16 flex flex-col max-w-7xl mx-auto relative">
+      <div className="my-10 pt-16 flex flex-col max-w-7xl mx-auto relative">
         <div className="absolute -z-0" style={{ top:'-40%',right:'-300px',height:'600px',width:'600px',background:'radial-gradient(50% 50% at 50% 50%, #8080FF 0%, rgba(128, 128, 255, 0) 100%)',opacity:'0.1'}}></div>
-        <h2 className="text-5xl md:text-6xl md:w-5/6 font-bold text-center mb-12 mx-auto">What makes us <span className="text-indigo-400">Unique!</span></h2>
+        <h2 className="text-5xl md:text-6xl md:w-5/6 font-bold text-center mb-12 mx-auto">What makes us <span className="text-violet-500">Unique!</span></h2>
         <div className="flex flex-wrap items-stretch content-stretch w-full max-w-screen-xl">
           {Uniqueness.map((element, i) => (
-            <div className="w-full md:w-1/3 p-5 relative">
+            <div key={`uniqueness-element-${i}`} className="w-full md:w-1/3 p-5 relative">
               <img loading="lazy" src="https://devsnest.in/_next/static/media/corner-boxes.315df797.svg" alt="box" className="absolute top-4 right-5 p-0.5 opacity-10 select-none" />
               <div className="h-full bg-gradient-to-br from-indigo-400 via-zinc-700 to-zinc-600 p-0.5 rounded-md">
                 <div className="min-h-full shadow-sm p-6 rounded-md" style={{ background:"linear-gradient(114.7deg, #27272A -9.77%, #18181B 110.32%)" }}>
@@ -152,16 +155,28 @@ function Main() {
         </div>
       </div>
 
-      {/* Section 7 */}
+      {/* Section 7 - Motion Randomness */}
 
-      <div className="my-10 pt-16 flex flex-col relative">
+      <div className="my-10 pt-16 flex flex-col md:flex-row md:justify-center md:items-center max-w-4xl mx-auto relative">
+        <h2 className="md:flex-1 text-5xl md:text-6xl font-bold text-center mb-8 mx-auto md:mr-8 md:ml-0"><span className="md:block">Random</span> <span className="md:block text-violet-500">Motion</span></h2>
+        <div className="md:flex-1 flex md:block justify-center items-center my-8 border-0 md:border-l-4 border-violet-500">
+          <div className="flex flex-col justify-between h-60 w-full rounded-lg py-8 px-10">
+            <div className="text-gray-200 text-center text-xl font-medium motion-quote-font bg-violet-600 -rotate-12 max-h-24 py-6"><span className="inline-block rotate-12">{Motions[motionIndex]}</span></div>
+            <button className="z-50 mx-auto py-2 px-6 bg-violet-500 hover:bg-violet-600 rounded font-semibold text-lg" onClick={getRandomMotion}>New <i className="fal fa-long-arrow-right ml-3 translate-y-px"></i></button>
+          </div>
+        </div>
+      </div>
+
+      {/* Section 8 - Founders */}
+
+      <div className="mt-10 pt-16 flex flex-col relative">
         <div className="absolute -z-0" style={{ top:'-20%',right:'-300px',height:'600px',width:'600px',background:'radial-gradient(50% 50% at 50% 50%, #8080FF 0%, rgba(128, 128, 255, 0) 100%)',opacity:'0.1'}}></div>
         <div className="flex flex-col max-w-7xl mx-auto relative">
-          <h2 className="text-5xl md:text-6xl font-bold text-center">Meet Our <span className="text-indigo-400">Founders</span></h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-center">Meet Our <span className="text-violet-500">Founders</span></h2>
           <div className="flex flex-wrap justify-center mx-auto">
             {Founders.map((founder, i) => (
-              <div className="m-5 pt-24">
-                <div className="h-full flex items-center space-x-8 px-5 py-10 bg-indigo-700 rounded-lg">
+              <div key={`founder-element-${i}`} className="m-5 pt-24">
+                <div className="h-full flex items-center space-x-8 px-5 py-10 bg-violet-700 rounded-lg">
                   <div>
                     <img loading="lazy" src={founder.image} alt="founder" className="mx-auto h-44 w-44 rounded-full -mt-32" />
                     <div className="pt-3">

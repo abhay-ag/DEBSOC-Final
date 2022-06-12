@@ -7,7 +7,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    @apply bg-indigo-400;
+    @apply bg-violet-500;
 }
 
 .target-link {
@@ -35,6 +35,10 @@ body::-webkit-scrollbar-thumb {
     @apply bg-gray-950 text-zinc-400;
 }
 
+.motion-quote-font {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
 /*input:-webkit-autofill,*/
 /*input:-webkit-autofill:hover,*/
 /*input:-webkit-autofill:focus,*/
@@ -50,9 +54,9 @@ body::-webkit-scrollbar-thumb {
 /*}*/
 
 .auth-page-background {
-    @apply bg-top bg-no-repeat bg-[url('https://devsnest.in/_next/static/media/login-bg.e98b8ea6.svg')];
+    @apply bg-top bg-no-repeat bg-[url('./media/svg/auth_page_background.svg')];
 }
 
 .main-page-background {
-    @apply bg-top bg-contain bg-no-repeat bg-[url('https://devsnest.in/_next/static/media/gradient-banner.b90a7578.svg')]
+    @apply bg-top bg-contain bg-no-repeat bg-[url('./media/svg/main_page_background.svg')]
 }

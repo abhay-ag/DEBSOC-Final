@@ -42,7 +42,7 @@ function Navbar({title, links}) {
           </div>
         </div>
         <div className='hidden md:block'>
-          <Link className="py-2 px-5 font-medium text-lg text-indigo-500 rounded-md bg-white login-link" to="/authentication">Sign in</Link>
+          <Link className="py-2 px-5 font-medium text-lg text-violet-600 rounded-md bg-white login-link" to="/authentication">Sign in</Link>
         </div>
         <div className='block md:hidden'>
           <button onClick={() => setToggleNavMenu(!toggleNavMenu)} className="bg-zinc-800 bg-opacity-50 inline-flex items-center justify-center p-2 rounded-md text-zinc-400 hover:text-white hover:bg-opacity-60 focus:outline-none">
