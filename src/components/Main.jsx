@@ -160,8 +160,8 @@ function Main() {
       <div className="my-10 pt-16 flex flex-col md:flex-row md:justify-center md:items-center max-w-4xl mx-auto relative">
         <h2 className="md:flex-1 text-5xl md:text-6xl font-bold text-center mb-8 mx-auto md:mr-8 md:ml-0"><span className="md:block">Random</span> <span className="md:block text-violet-500">Motion</span></h2>
         <div className="md:flex-1 flex md:block justify-center items-center my-8 border-0 md:border-l-4 border-violet-500">
-          <div className="flex flex-col justify-between h-60 w-full rounded-lg py-8 px-10">
-            <div className="text-gray-200 text-center text-xl font-medium motion-quote-font bg-violet-600 -rotate-12 max-h-24 py-6"><span className="inline-block rotate-12">{Motions[motionIndex]}</span></div>
+          <div className="flex flex-col justify-between h-80 w-full rounded-lg py-8 px-10">
+            <div className="text-gray-200 text-center text-xl font-medium motion-quote-font random-motion-background -rotate-12 max-h-36 py-6"><span className="inline-block rotate-12">{Motions[motionIndex]}</span></div>
             <button className="z-50 mx-auto py-2 px-6 bg-violet-500 hover:bg-violet-600 rounded font-semibold text-lg" onClick={getRandomMotion}>New <i className="fal fa-long-arrow-right ml-3 translate-y-px"></i></button>
           </div>
         </div>

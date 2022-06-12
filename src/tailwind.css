@@ -23,7 +23,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main-section-1-special-element {
-    @apply bg-gradient-to-br from-indigo-400 via-gray-700 to-gray-600 p-0.5 rounded h-full;
+    @apply bg-gradient-to-br from-violet-500 via-gray-700 to-gray-600 p-0.5 rounded h-full;
 }
 
 .main-section-1-special-sub-element {
@@ -59,4 +59,8 @@ body::-webkit-scrollbar-thumb {
 
 .main-page-background {
     @apply bg-top bg-contain bg-no-repeat bg-[url('./media/svg/main_page_background.svg')]
+}
+
+.random-motion-background {
+    background: repeating-linear-gradient(to right, rgb(124,58,237), rgb(124,58,237) 10%, rgb(55 65 81) 10%, rgb(55 65 81) 20%);
 }

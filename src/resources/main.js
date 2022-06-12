@@ -84,19 +84,19 @@ const Uniqueness = [
 ];
 
 const Motions = [
-  "Children should be excluded from any religion until adulthood",
-  "We support parents who secretly install spyware on their children’s electronic devices",
-  "European governments should pay parents to have children",
-  "Women should get an equal position in war with men",
-  "Strong dictatorship is better than weak democracy",
-  "Parents should lose custody of morbidly obese children",
-  "After cohabiting for six months, couples should be considered as married",
-  "We should tax unhealthy food",
-  "We support censorship on pornography at Internet",
-  "The state should prohibit all items of clothing that cover the face",
-  "Children should be allowed mobile phones in school",
+  "Afforestation the only method to reverse climate change",
+  "Individual feminist women should reject acts of chivalry (e.g. buying drinks for them, holding the door open, \"ladies first\" etc)",
+  "Do you regret the commercialization of feminism?",
+  "THBT US should engage in diplomatic talks with Russia than to provide military assistance to Ukraine in the light of current invasion",
+  "THBT Western states should engage in covert cyber attacks against infrastructure designed to limit freedom of speech in authoritarian states like China",
+  "THBT US should engage in diplomatic talks with Russia than to provide military assistance to Ukraine in the light of current invasion",
+  "THW apply universal jurisdiction to crimes against the environment",
+  "WImpact of COVID-19 on Indian economy",
+  "Is cricket an overrated sport in India?",
+  "Is nuclear disarmament mandatory to achieve World Peace?",
+  "Corporate Social Responsibility – Charity or Marketing gimmick?",
   "Childhood vaccinations should be compulsory",
-  "Children shouldn’t have to do chores",
+  "How can we reduce wealth gap between Rich & Poor?",
 ];
 
 const Founders = [
