@@ -169,7 +169,7 @@ function Main() {
 
       {/* Section 8 - Founders */}
 
-      <div className="mt-10 pt-16 flex flex-col relative">
+      {/* <div className="mt-10 pt-16 flex flex-col relative">
         <div className="absolute -z-0" style={{ top:'-20%',right:'-300px',height:'600px',width:'600px',background:'radial-gradient(50% 50% at 50% 50%, #8080FF 0%, rgba(128, 128, 255, 0) 100%)',opacity:'0.1'}}></div>
         <div className="flex flex-col max-w-7xl mx-auto relative">
           <h2 className="text-5xl md:text-6xl font-bold text-center">Meet Our <span className="text-indigo-400">Founders</span></h2>
@@ -196,7 +196,7 @@ function Main() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
