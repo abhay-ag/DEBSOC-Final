@@ -33,7 +33,7 @@ function Navbar({title, links}) {
   };
 
   return (
-    <nav className="w-full text-white shadow backdrop-filter backdrop-blur bg-zinc-900 bg-opacity-40 sticky top-0 w-full px-5 z-50 md:bg-opacity-10">
+    <nav className="Navbar w-full text-white shadow backdrop-filter backdrop-blur bg-zinc-900 bg-opacity-40 sticky top-0 w-full px-5 z-50 md:bg-opacity-10">
       <div className='flex justify-between items-center px-4 h-20 mx-auto'>
         <div className="flex justify-center items-center">
           <Link className="font-black text-xl box-border flex-shrink-0 patented-logo" to="/" onClick={() => toggleNavMenu(false)}>{title}</Link>

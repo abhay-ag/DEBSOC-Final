@@ -1,7 +1,7 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDoubleDown, faClock} from "@fortawesome/free-solid-svg-icons";
 
-export default function Curriculum() {
+export default function Events() {
     return (
         <div>
             <div className="my-16 text-center">

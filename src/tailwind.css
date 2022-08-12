@@ -7,7 +7,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    @apply bg-violet-500;
+    @apply bg-indigo-400;
 }
 
 .target-link {
@@ -62,5 +62,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 .random-motion-background {
-    background: repeating-linear-gradient(to right, rgb(124,58,237), rgb(124,58,237) 10%, rgb(55 65 81) 10%, rgb(55 65 81) 20%);
+    @apply bg-[url('./media/svg/random_motion_background.svg')] bg-cover bg-no-repeat bg-bottom bg-origin-padding;
 }

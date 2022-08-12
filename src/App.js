@@ -1,19 +1,21 @@
 import Main from './components/Main';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Community from "./components/Community";
-import Curriculum from "./components/Curriculum";
+import Society from "./components/Society";
+import Events from "./components/Events";
 import ContactUs from "./components/ContactUs";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './style.css';
 import Authentication from "./components/Authentication";
 import FAQ from "./components/FAQs";
+import DebMeet from "./components/DebMeet";
 
 function App() {
   const navLinks = [
     {name: "Home", to: ""},
-    {name: "Community", to: "Community"},
-    {name: "Curriculum", to: "Curriculum"}
+    {name: "Society", to: "Society"},
+    {name: "Events", to: "Events"},
+    {name: "DebMeet", to: "DebMeet"},
   ];
 
   const footerLinks = [
@@ -31,20 +33,17 @@ function App() {
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
       <div className='App flex flex-col overflow-hidden bg-zinc-900 min-h-screen text-white'>
-        <Navbar
-        title= "DEBSOC"
-        links = {navLinks} />
-        {/* <div className="content"> */}
+        <Navbar title= "DEBSOC" links = {navLinks} />
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/Home" element={<Main />} />
-            <Route path="/Community" element={<Community />} />
-            <Route path="/Curriculum" element={<Curriculum />} />
+            <Route path="/Society" element={<Society />} />
+            <Route path="/Events" element={<Events />} />
+            <Route path="/DebMeet" element={<DebMeet />} />
             <Route path="/faqs" element={<FAQ />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/authentication" element={<Authentication />} />
           </Routes>
-        {/* </div> */}
         <Footer footerLinks={footerLinks} footerSocialLinks={footerSocialLinks} />
       </div>
     </Router>

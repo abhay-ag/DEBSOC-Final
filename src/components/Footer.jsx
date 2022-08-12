@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer({ footerLinks, footerSocialLinks }) {
     return (
-        <footer className="bg-zinc-800">
+        <footer className="Footer bg-zinc-800">
             <div className="container py-8 px-4 mx-auto">
                 <div className="footer-nav flex flex-wrap justify-center space-x-10 md:space-x-20">
                     {footerLinks.map((link) => (

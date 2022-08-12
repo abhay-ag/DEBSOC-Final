@@ -2,11 +2,11 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDiscord, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 
 
-export default function Community() {
+export default function Society() {
     return (
         <div>
             <div className="desperate-join-message px-6 md:px-10 pt-14 text-center">
-                <div className="text-4xl md:text-5xl font-bold py-10">Join our <span className="text-indigo-400">Community</span></div>
+                <div className="text-4xl md:text-5xl font-bold py-10">Join our <span className="text-indigo-400">Society</span></div>
                 <div className="text-xl font-base/">
                     <div>Become a member of our super awesome community and witness a learning ecosystem where curiosity is nurtured.</div>
                     <div>Join our whatsapp channel making sure you get all the updates</div>

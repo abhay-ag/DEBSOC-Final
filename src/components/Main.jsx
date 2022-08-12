@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import studentsKilaFate from '../media/images/studentsKilaFate.png'
-// import Logo from '../media/images/debsoc_logo.png'
+import RandomMotionBackgroundSVG from '../media/svg/random_motion_background.svg';
 import {Achievements, Curriculum, Founders, Motions, Uniqueness} from "../resources/main";
 import {Link} from "react-router-dom";
 
@@ -50,7 +50,7 @@ function Main() {
         <div className="text-xl md:text-2xl text-center font-medium">Kickstart your debating journey with peer learning and hands on practice driven 12 months debating bootcamp to become a public speaker, an amazing researcher, speak with fluency and participate in top debating competitions all over India.</div>
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/3 lg:px-5 py-5 overflow-hidden min-h-full w-full">
-            <div className="bg-gradient-to-br from-violet-400 via-gray-700 to-gray-600 p-0.5 rounded h-full">
+            <div className="bg-gradient-to-br from-indigo-400 via-gray-700 to-gray-600 p-0.5 rounded h-full">
               <div className="shadow-sm rounded flex flex-col items-center py-7 px-4 h-full" style={{ background:'linear-gradient(114.7deg, #27272A -9.77%, #18181B 110.32%)' }}>
                 <div>
                   <i className="fad fa-comments-alt text-indigo-400 text-4xl"></i>
@@ -60,7 +60,7 @@ function Main() {
             </div>
           </div>
           <div className="lg:w-1/3 lg:px-5 py-5 overflow-hidden min-h-full w-full">
-            <div className="bg-gradient-to-br from-violet-400 via-gray-700 to-gray-600 p-0.5 rounded h-full">
+            <div className="bg-gradient-to-br from-indigo-400 via-gray-700 to-gray-600 p-0.5 rounded h-full">
               <div className="shadow-sm rounded flex flex-col items-center py-7 px-4 h-full" style={{ background:'linear-gradient(114.7deg, #27272A -9.77%, #18181B 110.32%)' }}>
                 <div>
                   <i className="fad fa-podium text-indigo-400 text-4xl"></i>
@@ -70,7 +70,7 @@ function Main() {
             </div>
           </div>
           <div className="lg:w-1/3 lg:px-5 py-5 overflow-hidden min-h-full w-full">
-            <div className="bg-gradient-to-br from-violet-400 via-gray-700 to-gray-600 p-0.5 rounded h-full">
+            <div className="bg-gradient-to-br from-indigo-400 via-gray-700 to-gray-600 p-0.5 rounded h-full">
               <div className="shadow-sm rounded flex flex-col items-center py-7 px-4 h-full" style={{ background:'linear-gradient(114.7deg, #27272A -9.77%, #18181B 110.32%)' }}>
                 <div>
                   <i className="fad fa-user-friends text-indigo-400 text-4xl"></i>
@@ -105,7 +105,7 @@ function Main() {
                 <h2 className="text-lg text-gray-300 font-semibold text-center">{person.name}</h2>
                 <p className="text-gray-400 text-base text-center px-4">
                   {person.achievement.map((value, j) => (
-                    <span className="block">{value}</span>
+                    <span key={`achievement-item-${i}`} className="block">{value}</span>
                   ))}
                 </p>
               </div>
@@ -131,7 +131,7 @@ function Main() {
             </div>
           ))}
         </div>
-        <Link className="text-indigo-400 hover:text-violet-600 transition-colors font-medium text-2xl mx-2 mt-12 text-center" to="/curriculum">Check our detailed curriculum &#8594;</Link>
+        <Link className="text-indigo-400 hover:text-indigo-600 transition-colors font-medium text-2xl mx-2 mt-12 text-center" to="/curriculum">Check our detailed curriculum &#8594;</Link>
       </div>
 
       {/* Section 6 - Uniqueness */}
@@ -159,9 +159,10 @@ function Main() {
 
       <div className="my-10 pt-16 flex flex-col md:flex-row md:justify-center md:items-center max-w-4xl mx-auto relative">
         <h2 className="md:flex-1 text-5xl md:text-6xl font-bold text-center mb-8 mx-auto md:mr-8 md:ml-0"><span className="md:block">Random</span> <span className="md:block text-indigo-400">Motion</span></h2>
-        <div className="md:flex-1 flex md:block justify-center items-center my-8 border-0 md:border-l-4 border-indigo-400">
+        <div className="relative md:flex-1 flex md:block justify-center items-center my-8 border-0 md:border-l-4 border-indigo-400">
+          <div className="absolute h-full w-full random-motion-background"></div>
           <div className="flex flex-col justify-between h-80 w-full rounded-lg py-8 px-10">
-            <div className="text-gray-200 text-center text-xl font-medium motion-quote-font random-motion-background -rotate-12 max-h-36 py-6"><span className="inline-block rotate-12">{Motions[motionIndex]}</span></div>
+            <div className="text-gray-200 text-center text-xl font-medium motion-quote-font -rotate-12 max-h-36 py-6"><span className="inline-block rotate-12">{Motions[motionIndex]}</span></div>
             <button className="z-50 mx-auto py-2 px-6 bg-indigo-400 hover:bg-indigo-500 rounded font-semibold text-lg" onClick={getRandomMotion}>New <i className="fal fa-long-arrow-right ml-3 translate-y-px"></i></button>
           </div>
         </div>
